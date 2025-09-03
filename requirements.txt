@@ -6,5 +6,6 @@ seaborn
 python-dotenv
 pymongo
 certifi
+pymongo
 
 #-e .
