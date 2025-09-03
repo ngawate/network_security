@@ -50,7 +50,8 @@ class Network_Data_Extract():
         except Exception as e:
             logging.error(e)
             raise NetworkSecurityException(e, sys)
-        
+
+'''     
 if __name__ == '__main__':
     FILE_PATH = r"C:\Users\Z0166121\Downloads\Network_Security\Network_Data\phisingData.csv"
     DATABASE = "NIKHIL_AI_Security"
@@ -62,4 +63,4 @@ if __name__ == '__main__':
     no_of_records = network_obj.insert_data_mongo_db(data_records, DATABASE, Collection)
 
     print(no_of_records)
-    logging.info(no_of_records)
+    logging.info(no_of_records)'''
