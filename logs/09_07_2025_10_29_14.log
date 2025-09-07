@@ -1,0 +1,11 @@
+[ 2025-09-07 10:29:14,206] 13 main.py - INFO - Intiate Data Ingestion
+[ 2025-09-07 10:29:16,110] 62 data_ingestion.py - INFO - Train test split is done
+[ 2025-09-07 10:29:16,157] 69 data_ingestion.py - INFO - Created Train and Test directory with data in it
+[ 2025-09-07 10:29:16,157] 15 main.py - INFO - Data Initiation is completed
+[ 2025-09-07 10:29:16,161] 19 main.py - INFO - Data Validation Initiate
+[ 2025-09-07 10:29:16,213] 36 data_validation.py - INFO - Required number of columns: 2
+[ 2025-09-07 10:29:16,214] 37 data_validation.py - INFO - df has columns: 31
+[ 2025-09-07 10:29:16,214] 36 data_validation.py - INFO - Required number of columns: 2
+[ 2025-09-07 10:29:16,215] 37 data_validation.py - INFO - df has columns: 31
+[ 2025-09-07 10:29:16,313] 134 data_validation.py - INFO - Data Validation artifact: DataValidationArtifact(validation_status=None, valid_train_file_path='Artifacts\\09_07_2025_10_29_14\\data_validation\\validated\\train.csv', valid_test_file_path='Artifacts\\09_07_2025_10_29_14\\data_validation\\validated\\test.csv', invalid_train_file_path='Artifacts\\09_07_2025_10_29_14\\data_validation\\invalid\\train.csv', invalid_test_file_path='Artifacts\\09_07_2025_10_29_14\\data_validation\\invalid\\test.csv', drift_report_file_path='Artifacts\\09_07_2025_10_29_14\\data_validation\\drift_report\\drift_report\\report.yaml')
+[ 2025-09-07 10:29:16,313] 21 main.py - INFO - Data Validation Completed
