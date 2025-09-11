@@ -1,7 +1,0 @@
-[ 2025-09-07 10:26:52,649] 13 main.py - INFO - Intiate Data Ingestion
-[ 2025-09-07 10:26:54,647] 62 data_ingestion.py - INFO - Train test split is done
-[ 2025-09-07 10:26:54,713] 69 data_ingestion.py - INFO - Created Train and Test directory with data in it
-[ 2025-09-07 10:26:54,713] 15 main.py - INFO - Data Initiation is completed
-[ 2025-09-07 10:26:54,718] 19 main.py - INFO - Data Validation Initiate
-[ 2025-09-07 10:26:54,719] 137 data_validation.py - ERROR - 'DataIngestionConfig' object has no attribute 'trained_file_path'
-[ 2025-09-07 10:26:54,719] 24 main.py - ERROR - Error occured in python script name C:\Users\Z0166121\Downloads\Network_Security\networksecurity\components\data_validation.py --> line number 91 --> error message 'DataIngestionConfig' object has no attribute 'trained_file_path'
