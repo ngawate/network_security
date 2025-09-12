@@ -1,0 +1,23 @@
+[ 2025-09-12 09:36:21,093] 16 main.py - INFO - Intiate Data Ingestion
+[ 2025-09-12 09:36:23,908] 62 data_ingestion.py - INFO - Train test split is done
+[ 2025-09-12 09:36:23,956] 69 data_ingestion.py - INFO - Created Train and Test directory with data in it
+[ 2025-09-12 09:36:23,956] 18 main.py - INFO - Data Initiation is completed
+[ 2025-09-12 09:36:23,972] 22 main.py - INFO - Data Validation Initiate
+[ 2025-09-12 09:36:24,011] 36 data_validation.py - INFO - Required number of columns: 2
+[ 2025-09-12 09:36:24,011] 37 data_validation.py - INFO - df has columns: 31
+[ 2025-09-12 09:36:24,011] 36 data_validation.py - INFO - Required number of columns: 2
+[ 2025-09-12 09:36:24,011] 37 data_validation.py - INFO - df has columns: 31
+[ 2025-09-12 09:36:24,126] 134 data_validation.py - INFO - Data Validation artifact: DataValidationArtifact(validation_status=None, valid_train_file_path='Artifacts\\09_12_2025_09_36_20\\data_validation\\validated\\train.csv', valid_test_file_path='Artifacts\\09_12_2025_09_36_20\\data_validation\\validated\\test.csv', invalid_train_file_path='Artifacts\\09_12_2025_09_36_20\\data_validation\\invalid\\train.csv', invalid_test_file_path='Artifacts\\09_12_2025_09_36_20\\data_validation\\invalid\\test.csv', drift_report_file_path='Artifacts\\09_12_2025_09_36_20\\data_validation\\drift_report\\drift_report\\report.yaml')
+[ 2025-09-12 09:36:24,127] 24 main.py - INFO - Data Validation Completed
+[ 2025-09-12 09:36:24,127] 28 main.py - INFO - Intiate Data Transformation
+[ 2025-09-12 09:36:24,127] 50 data_transformation.py - INFO - Initiating Data Transformation
+[ 2025-09-12 09:36:24,127] 52 data_transformation.py - INFO - Artifacts\09_12_2025_09_36_20\data_validation\validated\train.csv
+[ 2025-09-12 09:36:24,167] 29 data_transformation.py - INFO - Entered get data transformer object method of transformation
+[ 2025-09-12 09:36:24,167] 32 data_transformation.py - INFO - Initialize KNN imputer with parameters as {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2025-09-12 09:36:24,186] 76 data_transformation.py - INFO - Preparing Artifacts
+[ 2025-09-12 09:36:24,187] 30 main.py - INFO - Data Transformation Completed
+[ 2025-09-12 09:36:24,206] 113 model_trainer.py - INFO - Initiating Model Traininig
+[ 2025-09-12 09:36:27,621] 101 utils.py - ERROR - Invalid parameter 'n_estimators' for estimator DecisionTreeClassifier(). Valid parameters are: ['ccp_alpha', 'class_weight', 'criterion', 'max_depth', 'max_features', 'max_leaf_nodes', 'min_impurity_decrease', 'min_samples_leaf', 'min_samples_split', 'min_weight_fraction_leaf', 'monotonic_cst', 'random_state', 'splitter'].
+[ 2025-09-12 09:36:27,621] 94 model_trainer.py - ERROR - Error occured in python script name C:\Users\Z0166121\Downloads\Network_Security\networksecurity\utils\main_utils\utils.py --> line number 85 --> error message Invalid parameter 'n_estimators' for estimator DecisionTreeClassifier(). Valid parameters are: ['ccp_alpha', 'class_weight', 'criterion', 'max_depth', 'max_features', 'max_leaf_nodes', 'min_impurity_decrease', 'min_samples_leaf', 'min_samples_split', 'min_weight_fraction_leaf', 'monotonic_cst', 'random_state', 'splitter'].
+[ 2025-09-12 09:36:27,621] 120 model_trainer.py - ERROR - Error occured in python script name C:\Users\Z0166121\Downloads\Network_Security\networksecurity\components\model_trainer.py --> line number 60 --> error message Error occured in python script name C:\Users\Z0166121\Downloads\Network_Security\networksecurity\utils\main_utils\utils.py --> line number 85 --> error message Invalid parameter 'n_estimators' for estimator DecisionTreeClassifier(). Valid parameters are: ['ccp_alpha', 'class_weight', 'criterion', 'max_depth', 'max_features', 'max_leaf_nodes', 'min_impurity_decrease', 'min_samples_leaf', 'min_samples_split', 'min_weight_fraction_leaf', 'monotonic_cst', 'random_state', 'splitter'].
+[ 2025-09-12 09:36:27,621] 38 main.py - ERROR - Error occured in python script name C:\Users\Z0166121\Downloads\Network_Security\networksecurity\components\model_trainer.py --> line number 115 --> error message Error occured in python script name C:\Users\Z0166121\Downloads\Network_Security\networksecurity\components\model_trainer.py --> line number 60 --> error message Error occured in python script name C:\Users\Z0166121\Downloads\Network_Security\networksecurity\utils\main_utils\utils.py --> line number 85 --> error message Invalid parameter 'n_estimators' for estimator DecisionTreeClassifier(). Valid parameters are: ['ccp_alpha', 'class_weight', 'criterion', 'max_depth', 'max_features', 'max_leaf_nodes', 'min_impurity_decrease', 'min_samples_leaf', 'min_samples_split', 'min_weight_fraction_leaf', 'monotonic_cst', 'random_state', 'splitter'].
