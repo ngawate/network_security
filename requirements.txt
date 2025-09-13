@@ -9,5 +9,6 @@ certifi
 pymongo
 pyaml
 dill
+mlflow
 
 #-e .

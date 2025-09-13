@@ -14,9 +14,9 @@ from networksecurity.entity.artifact_entity import ModelTrainerArtifact
 from networksecurity.utils.ml_utils.metric.classification_mertric import get_classification_score
 from networksecurity.utils.ml_utils.model.estimator import NetworkModel
 from sklearn.linear_model import LogisticRegression
-from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import AdaBoostClassifier, GradientBoostingClassifier, RandomForestClassifier
+import mlflow
 
 class ModelTrainer:
 
@@ -27,6 +27,18 @@ class ModelTrainer:
         except Exception as e:
             logging.error(e)
             raise NetworkSecurityException(e, sys)
+        
+    def track_mlflow(self, best_model, classfication_metric):
+        with mlflow.start_run():
+            f1_score = classfication_metric.f1_score
+            precision_score = classfication_metric.precision_score
+            recall_score = classfication_metric.recall_score
+
+            mlflow.log_metric("f1_score", f1_score)
+            mlflow.log_metric("precision_score", precision_score)
+            mlflow.log_metric("recall_score", recall_score)
+
+            mlflow.sklearn.log_model(best_model, "model")
         
     def train_model(self, X_train, y_train, X_test, y_test):
         try:
@@ -73,6 +85,9 @@ class ModelTrainer:
 
             classfication_train_metric = get_classification_score(y_train, y_train_pred)
             classfication_test_metric = get_classification_score(y_test, y_test_pred)
+
+            self.track_mlflow(best_model, classfication_train_metric)
+            self.track_mlflow(best_model, classfication_test_metric)
 
             preprocessor = load_object(file_path=self.data_transformation_artifact.transformed_object_file_path)
 

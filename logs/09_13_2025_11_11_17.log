@@ -1,0 +1,23 @@
+[ 2025-09-13 11:11:19,883] 16 main.py - INFO - Intiate Data Ingestion
+[ 2025-09-13 11:11:22,212] 62 data_ingestion.py - INFO - Train test split is done
+[ 2025-09-13 11:11:22,260] 69 data_ingestion.py - INFO - Created Train and Test directory with data in it
+[ 2025-09-13 11:11:22,261] 18 main.py - INFO - Data Initiation is completed
+[ 2025-09-13 11:11:22,276] 22 main.py - INFO - Data Validation Initiate
+[ 2025-09-13 11:11:22,320] 36 data_validation.py - INFO - Required number of columns: 2
+[ 2025-09-13 11:11:22,320] 37 data_validation.py - INFO - df has columns: 31
+[ 2025-09-13 11:11:22,320] 36 data_validation.py - INFO - Required number of columns: 2
+[ 2025-09-13 11:11:22,320] 37 data_validation.py - INFO - df has columns: 31
+[ 2025-09-13 11:11:22,436] 134 data_validation.py - INFO - Data Validation artifact: DataValidationArtifact(validation_status=None, valid_train_file_path='Artifacts\\09_13_2025_11_11_17\\data_validation\\validated\\train.csv', valid_test_file_path='Artifacts\\09_13_2025_11_11_17\\data_validation\\validated\\test.csv', invalid_train_file_path='Artifacts\\09_13_2025_11_11_17\\data_validation\\invalid\\train.csv', invalid_test_file_path='Artifacts\\09_13_2025_11_11_17\\data_validation\\invalid\\test.csv', drift_report_file_path='Artifacts\\09_13_2025_11_11_17\\data_validation\\drift_report\\drift_report\\report.yaml')
+[ 2025-09-13 11:11:22,437] 24 main.py - INFO - Data Validation Completed
+[ 2025-09-13 11:11:22,437] 28 main.py - INFO - Intiate Data Transformation
+[ 2025-09-13 11:11:22,437] 50 data_transformation.py - INFO - Initiating Data Transformation
+[ 2025-09-13 11:11:22,437] 52 data_transformation.py - INFO - Artifacts\09_13_2025_11_11_17\data_validation\validated\train.csv
+[ 2025-09-13 11:11:22,477] 29 data_transformation.py - INFO - Entered get data transformer object method of transformation
+[ 2025-09-13 11:11:22,478] 32 data_transformation.py - INFO - Initialize KNN imputer with parameters as {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2025-09-13 11:11:22,495] 76 data_transformation.py - INFO - Preparing Artifacts
+[ 2025-09-13 11:11:22,496] 30 main.py - INFO - Data Transformation Completed
+[ 2025-09-13 11:11:22,511] 128 model_trainer.py - INFO - Initiating Model Traininig
+[ 2025-09-13 11:12:02,597] 78 model_trainer.py - INFO - Best Model Name -> Random Forest
+[ 2025-09-13 11:12:02,597] 79 model_trainer.py - INFO - Best Model Score -> 0.8628693204371642
+[ 2025-09-13 11:12:16,656] 104 model_trainer.py - INFO - ModelTrainerArtifact(trained_model_file_path='Artifacts\\09_13_2025_11_11_17\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMertricArtifact(f1_score=0.9912059031638533, precision_score=0.9895055499495459, recall_score=0.9929121101660592), test_metric_artifact=ClassificationMertricArtifact(f1_score=0.9693502247650184, precision_score=0.9657980456026058, recall_score=0.9729286300246104))
+[ 2025-09-13 11:12:16,659] 35 main.py - INFO - Model Training Completed
