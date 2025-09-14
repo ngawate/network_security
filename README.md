@@ -36,7 +36,6 @@ Key Highlights:
 
 ### 🔄 End-to-End Pipeline  
 
-```mermaid
 flowchart TD
     A[Data Source] --> B[Data Ingestion]
     B --> C[Data Transformation]
