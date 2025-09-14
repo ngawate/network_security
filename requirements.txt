@@ -10,5 +10,7 @@ pymongo
 pyaml
 dill
 mlflow
+fastapi
+uvicorn
 
 #-e .
