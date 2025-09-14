@@ -20,6 +20,14 @@ Key Highlights:
 - 📊 **Visualization** – Graphical representation of network flow
 
 ---
+- flowchart TD
+    A[Data Source] --> B[Data Ingestion]
+    B --> C[Data Transformation]
+    C --> D[Model Training]
+    D --> E[Model Evaluation]
+    E --> F[Artifacts: Model + Transformer]
+
+---
 
 ## 🗂️ Features
 - ✅ Real-time packet capturing and inspection
@@ -34,14 +42,16 @@ Key Highlights:
 
 ## 🏗️ Project Structure
 ```bash
-network-security/
-├── docs/               # Documentation
-├── src/                # Source code
-│   ├── analysis/       # Traffic analysis tools
-│   ├── detection/      # Intrusion detection models
-│   ├── encryption/     # Crypto utilities
-│   └── visualization/  # Dashboard & plotting
-├── tests/              # Unit and integration tests
-├── data/               # Sample datasets / pcap files
-├── requirements.txt    # Python dependencies
-└── README.md           # Project documentation
+├── networksecurity/        # Core source code
+│   ├── components/         # Data ingestion, Data Evaluation, Data transformation, Model Triainer
+│   ├── entity/             # Config and artifact entity classes
+│   ├── pipeline/           # Training and prediction pipelines
+│   ├── utils/              # Helper functions
+│   └── logging/            # Custom logging module
+    └── Exception/          # Custom Exception module
+│
+├── artifacts/              # Stored models, transformers, and reports
+├── main.py                 # Entry point for training pipeline
+├── README.md               # Project documentation
+└── requirements.txt        # Dependencies
+
