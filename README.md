@@ -19,15 +19,30 @@ Key Highlights:
 - 🔑 **Encryption & Authentication** – Secure communications
 - 📊 **Visualization** – Graphical representation of network flow
 
+
 ---
-- flowchart TD
+
+## ⚙️ Features  
+
+✅ Automated **data ingestion** (CSV/Database)  
+✅ **Data transformation** with scaling, encoding, and feature engineering  
+✅ **Model training** with evaluation metrics and artifact tracking  
+✅ Modular, **config-driven pipeline** (easy to extend or modify)  
+✅ **Custom exception handling** and logging  
+
+---
+
+## 🏗️ Project Workflow  
+
+### 🔄 End-to-End Pipeline  
+
+```mermaid
+flowchart TD
     A[Data Source] --> B[Data Ingestion]
     B --> C[Data Transformation]
     C --> D[Model Training]
     D --> E[Model Evaluation]
     E --> F[Artifacts: Model + Transformer]
-
----
 
 ## 🗂️ Features
 - ✅ Real-time packet capturing and inspection
@@ -54,4 +69,5 @@ Key Highlights:
 ├── main.py                 # Entry point for training pipeline
 ├── README.md               # Project documentation
 └── requirements.txt        # Dependencies
+
 
