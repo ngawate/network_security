@@ -10,38 +10,29 @@
 ---
 
 ## 📌 Overview
-**Network Security** is a project aimed at analyzing, monitoring, and securing network traffic.  
-It focuses on identifying vulnerabilities, detecting suspicious activities, and ensuring data confidentiality, integrity, and availability.
+**Network Security**
+This project focuses on building a **machine learning pipeline** for network security, covering **data ingestion, transformation, model training, and evaluation**.  
+It is structured in a modular way to ensure scalability, maintainability, and ease of experimentation.
 
 Key Highlights:
-- 🔍 **Traffic Analysis** – Inspect packets & protocols
-- 🛡️ **Intrusion Detection** – Spot unusual or malicious behavior
-- 🔑 **Encryption & Authentication** – Secure communications
-- 📊 **Visualization** – Graphical representation of network flow
-
----
-
-## 🗂️ Features
-- ✅ Real-time packet capturing and inspection
-- ✅ Firewall rule simulation & testing
-- ✅ Intrusion detection (signature + anomaly-based)
-- ✅ Log monitoring & reporting
-- ✅ Attack simulation (DoS, spoofing, scanning)
-- ✅ Machine learning models for traffic classification
-- ✅ Interactive dashboards
+- 🔍 Automated **data ingestion** (CSV/MongoDB) 
+- 🛡️ **Data transformation** with scaling, encoding, and feature engineering
+- 🔑 **Model training** with evaluation metrics and artifact tracking 
+- 📊 Modular, **config-driven pipeline** (easy to extend or modify)  
 
 ---
 
 ## 🏗️ Project Structure
 ```bash
-network-security/
-├── docs/               # Documentation
-├── src/                # Source code
-│   ├── analysis/       # Traffic analysis tools
-│   ├── detection/      # Intrusion detection models
-│   ├── encryption/     # Crypto utilities
-│   └── visualization/  # Dashboard & plotting
-├── tests/              # Unit and integration tests
-├── data/               # Sample datasets / pcap files
-├── requirements.txt    # Python dependencies
-└── README.md           # Project documentation
+├── networksecurity/        # Core source code
+│   ├── components/         # Data ingestion, Data Evaluation, Data transformation, Model Triainer
+│   ├── entity/             # Config and artifact entity classes
+│   ├── pipeline/           # Training and prediction pipelines
+│   ├── utils/              # Helper functions
+│   └── logging/            # Custom logging module
+    └── Exception/          # Custom Exception module
+│
+├── artifacts/              # Stored models, transformers, and reports
+├── main.py                 # Entry point for training pipeline
+├── README.md               # Project documentation
+└── requirements.txt        # Dependencies
