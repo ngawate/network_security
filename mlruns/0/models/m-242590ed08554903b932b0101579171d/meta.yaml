@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/Z0166121/Downloads/Network_Security/mlruns/0/models/m-242590ed08554903b932b0101579171d/artifacts
+creation_timestamp: 1758465193713
+experiment_id: '0'
+last_updated_timestamp: 1758465199779
+model_id: m-242590ed08554903b932b0101579171d
+model_type: null
+name: model
+source_run_id: 4b3c86ea4f6a44d5a223358286ee3451
+status: 2
+status_message: null

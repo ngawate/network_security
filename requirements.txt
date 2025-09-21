@@ -12,5 +12,6 @@ dill
 mlflow
 fastapi
 uvicorn
+dvc
 
 #-e .
